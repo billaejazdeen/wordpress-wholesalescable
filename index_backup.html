@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Futureonics offers premium custom fiber optic assemblies, patch cables, and B2B network configurators. Fast shipping and industry-standard ISO certified termination.">
+    <title>Futureonics | Custom Fiber Optic Assemblies & B2B Cabling Solutions</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categories_prototype.css">
+    <link rel="stylesheet" href="css/industries_prototype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-announcement">
+        <div class="container">
+            <div class="announcement-item">
+                <i class="fa-solid fa-truck-fast text-accent" style="color: var(--accent);"></i>
+                <span><strong>Free Ground Shipping</strong> on orders over $250! Use Code: <span class="shipping-code">SHIP4FREE</span></span>
+            </div>
+            <div class="announcement-item">
+                <span class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <span><strong>Excellent</strong> 4.8/5 Rating (1200+ Reviews)</span>
+            </div>
+            <div class="announcement-item hidden-xs">
+                <span>ISO 9001:2015 Certified | AS9100 Manufacturing</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="container header-grid">
+            <!-- Brand Logo -->
+            <div class="logo-area">
+                <a href="#">
+                    <!-- Sleek Text Logo matching user's logo style -->
+                    <h2 style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 28px; color: var(--secondary); letter-spacing: -1px;">
+                        FUTURE<span style="color: var(--primary);">ONICS</span>
+                    </h2>
+                </a>
+            </div>
+
+            <!-- Modern Search Bar -->
+            <div class="search-wrapper">
+                <input type="text" class="search-bar" placeholder="Search bulk fiber, patch cables, connectors, testing gear...">
+                <button type="submit" class="search-submit-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <!-- Utilities -->
+            <div class="header-utilities">
+                <!-- Phone -->
+                <div class="utility-item hidden-xs">
+                    <i class="fa-solid fa-phone-volume utility-icon" style="color: var(--primary);"></i>
+                    <div class="utility-text">
+                        <span class="utility-label">Fast Lead Times</span>
+                        <a href="tel:+15613200396" class="ph-number">+1-561-320-0396</a>
+                    </div>
+                </div>
+
+                <!-- Account -->
+                <div class="utility-item">
+                    <i class="fa-regular fa-user utility-icon"></i>
+                    <div class="utility-text hidden-sm">
+                        <span class="utility-label">Portal</span>
+                        <span class="utility-value">Sign In</span>
+                    </div>
+                </div>
+
+                <!-- Wishlist -->
+                <div class="utility-item hidden-xs">
+                    <i class="fa-regular fa-heart utility-icon"></i>
+                    <span class="utility-badge" style="background-color: var(--secondary);">0</span>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="utility-item" id="header-cart">
+                    <i class="fa-solid fa-cart-shopping utility-icon" style="color: var(--primary);"></i>
+                    <span class="utility-badge">0</span>
+                    <div class="utility-text hidden-sm">
+                        <span class="utility-label">My Basket</span>
+                        <span class="utility-value">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#"><i class="fa-solid fa-bars"></i> Shop Categories</a></li>
+                <li><a href="#">Pre-Terminated</a></li>
+                <li><a href="#">Bulk Fiber</a></li>
+                <li><a href="#">Patch Cables</a></li>
+                <li><a href="#">Enclosures</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#configurator" class="configurator-tab btn-accent">
+                <i class="fa-solid fa-sliders"></i> Network Configurator
+            </a>
+        </div>
+    </nav>
+
+    <!-- CATEGORY QUICK LINKS (LANshack Style Icon Bar) -->
+    <div class="category-quicklinks">
+        <div class="container">
+            <div class="category-quicklinks-grid">
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <span class="quicklink-title">Pre-Terminated Assemblies</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <span class="quicklink-title">Tactical & Specialty Reels</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <span class="quicklink-title">MTP/MPO Trunk Cables</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <span class="quicklink-title">Patch Cables & Adaptors</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <span class="quicklink-title">Enclosures & Splice Trays</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <span class="quicklink-title">Termination Tools & Cleaning</span>
+                </a>
+                <a href="#" class="quicklink-card">
+                    <div class="quicklink-icon-box">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <span class="quicklink-title">Switches & Media Converters</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">USA Terminated &amp; Tested</span>
+                <h1 class="hero-title">Custom Fiber Cables, <br><span>Built to Order.</span></h1>
+                <p class="hero-desc">Create custom multi-strand assemblies with pulling eyes, custom lengths, and premium Corning glass. Rapid lead times, standard lifetime warranty.</p>
+                <div class="hero-buttons">
+                    <a href="#configurator" class="btn btn-primary"><i class="fa-solid fa-sliders"></i> Configure Now</a>
+                    <a href="#" class="btn btn-outline">Explore Products</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <!-- Spool Image generated by AI -->
+                    <img src="images/fiber_spool.png" alt="2-Strand G652.D Riser Rated Singlemode Spool" width="480" height="360">
+                    <div class="hero-spec-tag">
+                        <span>Model: FUTURE-G652-2S</span>
+                        <span>Tight Buffered | 1000 FT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CONFIGURATOR SECTION -->
+    <section class="configurator-banner-section" id="configurator">
+        <div class="container">
+            <div class="configurator-box">
+                <div class="config-header">
+                    <div class="config-header-text">
+                        <h3>Futureonics <span>Instant Cable Builder</span></h3>
+                        <p>Build custom pre-terminated fiber assemblies and calculate pricing instantly.</p>
+                    </div>
+                    <div class="config-tabs">
+                        <button class="config-tab-btn active" data-type="preterm">Pre-Terminated</button>
+                        <button class="config-tab-btn" data-type="mtp">MTP/MPO Trunk</button>
+                        <button class="config-tab-btn" data-type="patch">Patch Cable</button>
+                    </div>
+                </div>
+
+                <!-- Configurator Grid Form -->
+                <div class="config-grid">
+                    <div class="config-field">
+                        <label for="cable-type">Fiber Optic Mode</label>
+                        <select class="config-select" id="cable-type">
+                            <option value="singlemode">Singlemode OS2 9/125 (Corning)</option>
+                            <option value="om3">Multimode OM3 50/125 (10G)</option>
+                            <option value="om4">Multimode OM4 50/125 (40G/100G)</option>
+                            <option value="om1">Multimode OM1 62.5/125 (Legacy)</option>
+                        </select>
+                    </div>
+
+                    <div class="config-field">
+                        <label for="strand-count">Strand Count</label>
+                        <select class="config-select" id="strand-count">
+                            <option value="2">2 Strands</option>
+                            <option value="4">4 Strands</option>
+                            <option value="6">6 Strands</option>
+                            <option value="12">12 Strands</option>
+                            <option value="24">24 Strands</option>
+                            <option value="48">48 Strands</option>
+                        </select>
+                    </div>
+
+                    <div class="config-field">
+                        <label for="cable-length">Length (Feet)</label>
+                        <input type="number" class="config-input" id="cable-length" min="10" max="5000" value="250">
+                    </div>
+
+                    <div class="config-field">
+                        <label for="connector-a">Connector Side A</label>
+                        <select class="config-select" id="connector-a">
+                            <option value="lc-upc">LC/UPC Duplex</option>
+                            <option value="lc-apc">LC/APC Duplex</option>
+                            <option value="sc-upc">SC/UPC Duplex</option>
+                            <option value="sc-apc">SC/APC Duplex</option>
+                            <option value="st-upc">ST/UPC Simplex</option>
+                            <option value="mtp">MTP Female (12 Fiber)</option>
+                        </select>
+                    </div>
+
+                    <div class="config-field">
+                        <label for="connector-b">Connector Side B</label>
+                        <select class="config-select" id="connector-b">
+                            <option value="lc-upc">LC/UPC Duplex</option>
+                            <option value="lc-apc">LC/APC Duplex</option>
+                            <option value="sc-upc">SC/UPC Duplex</option>
+                            <option value="sc-apc">SC/APC Duplex</option>
+                            <option value="st-upc">ST/UPC Simplex</option>
+                            <option value="mtp">MTP Female (12 Fiber)</option>
+                        </select>
+                    </div>
+
+                    <div class="config-field">
+                        <label for="pulling-eye">Pulling Eye Surcharge</label>
+                        <select class="config-select" id="pulling-eye">
+                            <option value="no">No Pulling Eye</option>
+                            <option value="yes">Add Pulling Eye (Side A)</option>
+                        </select>
+                    </div>
+
+                    <div class="config-price-box">
+                        <span class="price-label">Estimated B2B Price</span>
+                        <div class="price-value" id="config-price">$0.00</div>
+                        <span class="price-details" id="config-spec-details">Calculating specs...</span>
+                    </div>
+                </div>
+
+                <div class="config-actions">
+                    <button class="btn btn-outline"><i class="fa-solid fa-file-invoice-dollar"></i> Get PDF Quote</button>
+                    <button class="btn btn-accent"><i class="fa-solid fa-cart-arrow-down"></i> Add Assembly to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES GRID (18-CATEGORY PORTFOLIO) -->
+    <section class="categories-section" style="padding: 60px 0 40px;">
+        <div class="main-content-area" style="max-width: 1440px; margin: 0 auto; padding: 0 24px;">
+            <div class="section-title-wrap">
+                <span class="section-tag">Explore Portfolio</span>
+                <h2 class="section-title">Industry-Standard Solutions</h2>
+            </div>
+            
+            <div class="categories-container">
+                <div class="categories-grid">
+                    <!-- Card 1 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/pre_terminated_assembly.png" alt="Pre-Terminated Fiber Optic Assemblies" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Pre-Terminated Fiber<br>Optic Assemblies</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_spool.png" alt="MTP/MPO Trunk Cables, Fanouts, & Cassettes" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">MTP/MPO Trunk Cables,<br>Fanouts, &amp; Cassettes</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/tactical_reel.png" alt="Harsh Environment Cabling & Equipment" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Harsh Environment<br>Cabling &amp; Equipment</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/pre_terminated_assembly.png" alt="Fiber Optic Patch Cables, Enclosures, & Splitters" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Fiber Optic Patch Cables,<br>Enclosures, &amp; Splitters</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_enclosure.png" alt="Fiber Enclosures, Adapter Panels, & Splice Trays" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Fiber Enclosures, Adapter<br>Panels, &amp; Splice Trays</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_enclosure.png" alt="MTP/MPO Cassettes, Enclosures, & Couplers" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">MTP/MPO Cassettes,<br>Enclosures, &amp; Couplers</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 7 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_spool.png" alt="Unterminated Fiber Optic Cable" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Unterminated Fiber<br>Optic Cable</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 8 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/transceiver.png" alt="Switches, SFPs & Media Converters" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Switches, SFPs &amp;<br>Media Converters</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 9 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/network_switch.png" alt="Network Switches - Managed, PoE, & Industrial" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Network Switches -<br>Managed, PoE, &amp; Industrial</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 10 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/crimping_tool.png" alt="Fiber Optic Testing Scopes, VFLs, OPMs, & OTDRs" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Fiber Optic Testing Scopes,<br>VFLs, OPMs, &amp; OTDRs</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 11 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/transceiver.png" alt="Fiber Optic Cleaning Products" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Fiber Optic Cleaning<br>Products</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 12 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/pre_terminated_assembly.png" alt="Ethernet Patch Cables" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Ethernet Patch Cables</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 13 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_spool.png" alt="Bulk Ethernet Cable" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Bulk Ethernet Cable</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 14 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/transceiver.png" alt="Data & Voice Connectors" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Data &amp; Voice Connectors</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 15 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/fiber_enclosure.png" alt="Ethernet Patch Panels" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Ethernet Patch Panels</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 16 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/crimping_tool.png" alt="Datacom Tools and Testers" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Datacom Tools and<br>Testers</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 17 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/tactical_reel.png" alt="IT Technician Tool Kits and Cases" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">IT Technician Tool<br>Kits and Cases</span>
+                        </div>
+                    </a>
+
+                    <!-- Card 18 -->
+                    <a href="#" class="category-card">
+                        <div class="card-img-box">
+                            <img src="images/network_switch.png" alt="Network Switches, SFPs, Converters, & Racks" loading="lazy">
+                        </div>
+                        <div class="card-title-box">
+                            <span class="card-title">Network Switches, SFPs,<br>Converters, &amp; Racks</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY CLIENTS LOGO ROW -->
+    <section class="trust-logos-section" style="border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+        <div class="section-wrapper">
+            <h3 class="trust-logos-title">Trusted By Premier Clients for Mission-Critical Network Infrastructure.</h3>
+            
+            <div class="logos-row">
+                <!-- Peraton -->
+                <div class="logo-item" title="Peraton">
+                    <span style="font-family: 'Outfit'; font-weight: 800; font-size: 20px; color: #005a9c; letter-spacing: -0.5px;">Peraton</span>
+                </div>
+                <!-- NASA -->
+                <div class="logo-item" title="NASA">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <div style="width: 28px; height: 28px; border-radius: 50%; background-color: #0b3d91; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 8px; border: 1px solid #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">NASA</div>
+                        <span style="font-family: 'Outfit'; font-weight: 800; font-size: 16px; color: #0b3d91; letter-spacing: 0.5px;">NASA</span>
+                    </div>
+                </div>
+                <!-- U.S. Air Force -->
+                <div class="logo-item" title="U.S. Air Force">
+                    <div style="display: flex; align-items: center; gap: 4px;">
+                        <i class="fa-solid fa-jet-fighter-up" style="color: #003087; font-size: 18px;"></i>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 12px; color: #003087; letter-spacing: 1px;">U.S. AIR FORCE</span>
+                    </div>
+                </div>
+                <!-- Northrop Grumman -->
+                <div class="logo-item" title="Northrop Grumman">
+                    <span style="font-family: 'Outfit'; font-weight: 800; font-size: 16px; color: #003366; letter-spacing: -0.5px;">NORTHROP GRUMMAN</span>
+                </div>
+                <!-- Caltech -->
+                <div class="logo-item" title="Caltech">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #ff6600; display: inline-block;"></div>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 18px; color: #333333; letter-spacing: -0.5px;">Caltech</span>
+                    </div>
+                </div>
+                <!-- MLB All-Star Game -->
+                <div class="logo-item" title="MLB All-Star Game">
+                    <div style="display: flex; align-items: center; gap: 4px; font-weight: 800; font-size: 12px; color: #c41e3a;">
+                        <i class="fa-solid fa-star" style="color: #c41e3a;"></i>
+                        <span>ALL-STAR GAME</span>
+                    </div>
+                </div>
+                <!-- DoD -->
+                <div class="logo-item" title="U.S. Department of Defense">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <i class="fa-solid fa-shield-halved" style="color: #1d2d50; font-size: 20px;"></i>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 11px; color: #1d2d50; letter-spacing: 0.5px; line-height: 1.1; text-align: left;">U.S. DEPT OF<br>DEFENSE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES WE SERVE CAROUSEL SECTION -->
+    <section class="industries-section" style="background-color: #ffffff; padding: 60px 0;">
+        <div class="section-wrapper" style="position: relative;">
+            
+            <div class="industries-header">
+                <h2 class="industries-title">Shop By Industries We Serve</h2>
+            </div>
+
+            <!-- Slider Track -->
+            <div class="industries-slider-wrapper">
+                <!-- Navigation Arrows -->
+                <button class="carousel-nav-btn prev" onclick="slideIndustries('left')" aria-label="Previous Slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav-btn next" onclick="slideIndustries('right')" aria-label="Next Slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="industries-track" id="industries-track">
+                    
+                    <!-- Slide 1: Aerospace & Defense -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/pre_terminated_assembly.png" alt="Aerospace &amp; Defense Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-jet-fighter industry-icon"></i>
+                                <span class="industry-name">Aerospace &amp;<br>Defense</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Data Centers -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/fiber_enclosure.png" alt="Data Centers Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-server industry-icon"></i>
+                                <span class="industry-name">Data Centers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Broadcast & A/V -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/tactical_reel.png" alt="Broadcast &amp; AV Tactical Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-video industry-icon"></i>
+                                <span class="industry-name">Broadcast &amp;<br>A/V Production</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Industrial Automation -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/network_switch.png" alt="Industrial Manufacturing Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-industry industry-icon"></i>
+                                <span class="industry-name">Industrial &amp;<br>Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: Telecommunications -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/fiber_spool.png" alt="Telecommunications ISP Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-tower-cell industry-icon"></i>
+                                <span class="industry-name">Telecom &amp;<br>FTTH/ISP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6: Enterprise Networks -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/pre_terminated_assembly.png" alt="Enterprise Commercial Networks">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-building industry-icon"></i>
+                                <span class="industry-name">Enterprise<br>Networks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7: Marine & Offshore -->
+                    <div class="industry-card">
+                        <div class="industry-img-box">
+                            <img src="images/tactical_reel.png" alt="Marine Rugged Fiber">
+                            <div class="industry-overlay">
+                                <i class="fa-solid fa-ship industry-icon"></i>
+                                <span class="industry-name">Marine &amp;<br>Offshore Oil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRUST & CERTIFICATIONS BAR -->
+    <section class="certifications-bar">
+        <div class="container certifications-flex">
+            <div class="cert-item">
+                <i class="fa-solid fa-award text-primary" style="font-size: 24px; color: var(--primary);"></i>
+                <span>ISO 9001:2015 REGISTERED</span>
+            </div>
+            <div class="cert-item">
+                <i class="fa-solid fa-shield-halved text-primary" style="font-size: 24px; color: var(--primary);"></i>
+                <span>AS9100D CERTIFIED PRODUCTION</span>
+            </div>
+            <div class="cert-item">
+                <i class="fa-solid fa-leaf text-primary" style="font-size: 24px; color: var(--primary);"></i>
+                <span>ROHS COMPLIANT COMPONENTS</span>
+            </div>
+            <div class="cert-item">
+                <i class="fa-solid fa-flag-usa text-primary" style="font-size: 24px; color: var(--primary);"></i>
+                <span>ASSEMBLED IN THE USA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B VALUE PROPOSITIONS -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Why Futureonics</span>
+                <h2 class="section-title">The Contractor's Trusted Partner</h2>
+            </div>
+            
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="trust-card-title">Fast Shipping</h3>
+                    <p class="trust-card-desc">Most custom assemblies ship within 24-48 hours. Express shipping options available for critical project timelines.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="trust-card-title">100% Interferometer Tested</h3>
+                    <p class="trust-card-desc">All connectors undergo strict geometric inspection and optical testing. Test reports included with every shipment.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="trust-card-title">Dedicated Support</h3>
+                    <p class="trust-card-desc">Speak to professional fiber specialists. Get help with project layouts, bills of materials, and direct quotes.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="trust-card-title">Lifetime Warranty</h3>
+                    <p class="trust-card-desc">We use Corning glass and premium components to guarantee zero defect reliability. Covered for life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B TECHNICAL RESOURCE CENTER -->
+    <section class="resources-section" style="padding: 80px 0; background-color: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+        <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 24px;">
+            <div class="section-title-wrap">
+                <span class="section-tag" style="color: var(--primary);">Knowledge Hub</span>
+                <h2 class="section-title" style="color: var(--dark);">Contractor &amp; Engineering Resources</h2>
+            </div>
+            
+            <div class="resources-grid">
+                <!-- Card 1 -->
+                <div class="resource-card">
+                    <div class="resource-icon-box">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-tag">Technical Guide</span>
+                        <h3 class="resource-title">Fiber Optic Loss Budget Calculator</h3>
+                        <p class="resource-desc">Learn how to calculate maximum allowable optical loss for singlemode and multimode networks according to TIA-568 standards.</p>
+                        <a href="#" class="resource-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="resource-card">
+                    <div class="resource-icon-box">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-tag">Whitepaper</span>
+                        <h3 class="resource-title">OM3 vs OM4 Multimode Performance</h3>
+                        <p class="resource-desc">A deep dive comparison of bandwidth limits, maximum distances, and light sources for 10G/40G/100G enterprise installations.</p>
+                        <a href="#" class="resource-link">Download PDF <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="resource-card">
+                    <div class="resource-icon-box">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-tag">Video Tutorial</span>
+                        <h3 class="resource-title">Pre-Terminated Pulling Eye Installation</h3>
+                        <p class="resource-desc">Step-by-step video demonstration of using the pulling mesh to run multi-strand pre-terminated fiber through conduit safely.</p>
+                        <a href="#" class="resource-link">Watch Video <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonial-carousel">
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"Futureonics pre-terminated fiber assemblies saved our team three days of field termination work on our new server room expansion. The LC connectors were pristine, and test reports were included in the package. Industry-standard quality, indeed!"</p>
+                <div class="testimonial-author">Marcus Vance</div>
+                <div class="testimonial-company">Lead Network Architect, Enterprise Systems Corp</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Newsletter Banner -->
+            <div class="footer-newsletter">
+                <div class="newsletter-flex">
+                    <div class="newsletter-text">
+                        <h3>Join the Futureonics Partner Program</h3>
+                        <p>Subscribe for exclusive contractor discounts, whitepapers, and new tool announcements.</p>
+                    </div>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" class="newsletter-input" placeholder="Enter your business email address..." required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Columns -->
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h2 style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 26px; color: #ffffff; margin-bottom: 20px;">
+                        FUTURE<span style="color: var(--primary);">ONICS</span>
+                    </h2>
+                    <p style="margin-bottom: 20px; font-size: 14px;">Futureonics is a leading manufacturer and supplier of fiber optic assemblies, copper wiring systems, and custom configurator tools. ISO Certified and Assembled in the USA.</p>
+                    <div style="display: flex; gap: 16px; font-size: 20px;">
+                        <a href="#" style="color: #cbd5e1;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: #cbd5e1;"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" style="color: #cbd5e1;"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Pre-Terminated Fiber</a></li>
+                        <li><a href="#">Tactical Assemblies</a></li>
+                        <li><a href="#">Bulk Fiber Optic Cable</a></li>
+                        <li><a href="#">Fiber Enclosures &amp; Trays</a></li>
+                        <li><a href="#">Ethernet Cables &amp; RJ45</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Request a B2B Quote</a></li>
+                        <li><a href="#">Net 30 Credit Application</a></li>
+                        <li><a href="#">Shipping &amp; Returns Policy</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info" style="list-style: none;">
+                        <li>
+                            <i class="fa-solid fa-map-location-dot" style="color: var(--primary); margin-top: 4px;"></i>
+                            <span>123 Fiber Optic Way,<br>Suite 400,<br>West Palm Beach, FL 33401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" style="color: var(--primary); margin-top: 4px;"></i>
+                            <span>+1-561-320-0396</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" style="color: var(--primary); margin-top: 4px;"></i>
+                            <span>sales@futureonics.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Futureonics. All Rights Reserved. ISO 9001:2015 Registered.</p>
+                <div class="payment-methods">
+                    <span class="payment-badge"><i class="fa-brands fa-cc-visa"></i> Visa</span>
+                    <span class="payment-badge"><i class="fa-brands fa-cc-mastercard"></i> Mastercard</span>
+                    <span class="payment-badge"><i class="fa-brands fa-cc-amex"></i> Amex</span>
+                    <span class="payment-badge"><i class="fa-solid fa-building-columns"></i> Net 30</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

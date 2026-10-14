@@ -1,0 +1,241 @@
+/* B2B Trust Logos & Industries Carousel Stylesheet */
+/* Integrates seamlessly with Porto Theme and matches LANshack B2B features */
+
+:root {
+    --industry-teal: rgba(13, 110, 120, 0.7); /* Teal overlay (#0d6e78) from screenshot */
+    --industry-teal-hover: rgba(13, 110, 120, 0.45);
+    --border-color: #cbd5e1;
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+    --primary-color: #0088cc;
+}
+
+/* 1. TRUSTED BY CLIENTS BANNER */
+.trust-logos-section {
+    padding: 60px 0 45px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.trust-logos-title {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
+}
+
+.logos-row {
+    display: flex;
+    justify-content: center; /* Center-aligned logos */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px; /* Space them out elegantly around center */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.logo-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.logo-item img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-item:hover {
+    filter: none;
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* 2. INDUSTRIES WE SERVE SECTION */
+.industries-section {
+    padding: 50px 0 80px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+
+.industries-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.industries-title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 800;
+    color: #111111;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+/* Slider Track Wrapper with padding for absolute arrows on margins */
+.industries-slider-wrapper {
+    position: relative;
+    padding: 0 50px; /* Margins for centering arrows next to track */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.industries-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide default scrollbar Firefox */
+}
+
+.industries-track::-webkit-scrollbar {
+    display: none; /* Hide default scrollbar Chrome/Safari */
+}
+
+/* Carousel Navigation Arrows - Absolutely Centered Vertically on Sides of Grid */
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+.carousel-nav-btn.prev {
+    left: 0px; /* Positioned on the left margin */
+}
+
+.carousel-nav-btn.next {
+    right: 0px; /* Positioned on the right margin */
+}
+
+.carousel-nav-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Industry Card (Teal Duotone Filter Overlay) */
+.industry-card {
+    flex: 0 0 calc(16.666% - 14px); /* 6 cards per row on desktop */
+    min-width: 200px;
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+/* Background image inside card */
+.industry-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+/* Teal Color Overlay Filter */
+.industry-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--industry-teal);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+/* Bold Overlay Text (Centered) */
+.industry-card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 3;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover micro-interactions */
+.industry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(13, 110, 120, 0.2);
+}
+
+.industry-card:hover .industry-card-img {
+    transform: scale(1.08);
+}
+
+.industry-card:hover .industry-card-overlay {
+    background-color: var(--industry-teal-hover);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+    .industry-card {
+        flex: 0 0 calc(25% - 12px); /* 4 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .industry-card {
+        flex: 0 0 calc(50% - 8px); /* 2 cards per row */
+    }
+    .trust-logos-title {
+        font-size: 20px;
+    }
+    .industries-title {
+        font-size: 22px;
+    }
+    .carousel-nav-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .industry-card {
+        flex: 0 0 100%; /* 1 card per row */
+    }
+}

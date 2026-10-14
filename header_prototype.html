@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futureonics | Industry-Standard Header Redesign</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/header_prototype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- UNIVERSAL HEADER CONTAINER -->
+    <div class="header-wrapper">
+        
+        <!-- TOP SECTION: LOGO SIDEBAR + RIGHT GRID -->
+        <div class="header-top-grid">
+            
+            <!-- LEFT COLUMN: SIDEBAR LOGO (Spans Row 1 and Row 2) -->
+            <div class="logo-sidebar">
+                <a href="#">
+                    <h1>FUTURE<span>ONICS</span></h1>
+                </a>
+                <div class="flag-tagline">
+                    <img src="images/us_flag.png" alt="USA Flag" style="width: 20px; height: 11px; display: inline-block; vertical-align: middle; border: 1px solid #ddd; margin-right: 4px;">
+                    <span>Custom Cable in the USA</span>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: ROW 1 (TEAL BAR) + ROW 2 (WHITE MENU BAR) -->
+            <div class="header-right-col">
+                
+                <!-- ROW 1: TEAL TRUST BAR -->
+                <div class="teal-bar">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>ISO 9001:2015 Certified &bull; AS9100 Certified</span>
+                    </div>
+                    
+                    <div class="trust-item center">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span><strong>Free Ground Shipping On Orders Over $250</strong> &bull; Use Code <span class="shipping-code-badge">SHIP4FREE</span> <span class="exclusions-link">Exclusions Apply</span></span>
+                    </div>
+                    
+                    <div class="trust-item">
+                        <i class="fa-solid fa-star" style="color: #00b67a;"></i>
+                        <span>Excellent 1200+ Reviews</span>
+                        <div class="trustpilot-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2: WHITE NAVIGATION MENU -->
+                <div class="white-nav-bar">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="#"><span class="menu-text">Shop By</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">Resources</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">Customer Support</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">About</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="configurator-link"><i class="fa-solid fa-gear"></i> Configurator Tools <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROW 3: DARK SEARCH & UTILITIES BAR (Full Width) -->
+        <div class="dark-search-bar">
+            <div class="container-flex">
+                
+                <!-- Phone Info -->
+                <div class="phone-block">
+                    <div class="phone-icon-box">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phone-text">
+                        <span class="phone-tagline">Fast Lead Times/ Fast Shipping</span>
+                        <a href="tel:+15613200396" class="phone-link">+1-561-320-0396</a>
+                    </div>
+                </div>
+
+                <!-- Main WooCommerce Search Bar -->
+                <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" class="search-input-field" placeholder="Search product codes, categories, keywords...">
+                        <button type="submit" class="search-button-el" aria-label="Submit Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Utilities (Account, Cart, Order Tracker) -->
+                <div class="utility-nav">
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span>Sign In</span>
+                    </a>
+                    
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span>My Cart</span>
+                    </a>
+
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <span>Track Order</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROW 4: SEVEN CATEGORY BLOCKS ROW -->
+        <div class="categories-tabs-row">
+            <div class="categories-tabs-grid">
+                
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-link category-tab-icon"></i>
+                    <div class="category-tab-text">Singlemode 9/125<br>Patch Cables</div>
+                </div>
+                
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-network-wired category-tab-icon"></i>
+                    <div class="category-tab-text">Multimode 50/125<br>Patch Cables</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-server category-tab-icon"></i>
+                    <div class="category-tab-text">MTP / MPO<br>Fiber Assemblies</div>
+                </div>
+
+                <div class="category-tab-item" style="position: relative;">
+                    <i class="fa-solid fa-drum category-tab-icon"></i>
+                    <div class="category-tab-text">Bulk Fiber<br>Optic Cables</div>
+                    <i class="fa-solid fa-chevron-right category-tab-icon" style="margin-left: auto; font-size: 11px;"></i>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-box-archive category-tab-icon"></i>
+                    <div class="category-tab-text">Enclosures<br>&amp; Cassettes</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-shuffle category-tab-icon"></i>
+                    <div class="category-tab-text">Ethernet &amp; Fiber<br>Converters</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-screwdriver-wrench category-tab-icon"></i>
+                    <div class="category-tab-text">Tools, Attenuators<br>&amp; Accessories</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MAIN BODY PLACEHOLDER (For previewing how the header sits on the page) -->
+    <div style="max-width: 1200px; margin: 60px auto; padding: 0 24px; text-align: center;">
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 28px; margin-bottom: 12px; color: #444;">Header Design Complete!</h2>
+        <p style="color: #666; font-size: 16px; margin-bottom: 24px;">This layout displays your universal header exactly like LANshack's design, using premium typography and vector icons.</p>
+        <span style="display: inline-block; padding: 12px 24px; background-color: var(--ls-teal); color: #fff; border-radius: 4px; font-weight: 700; font-family: 'Outfit';">Ready for WordPress Integration</span>
+    </div>
+
+</body>
+</html>

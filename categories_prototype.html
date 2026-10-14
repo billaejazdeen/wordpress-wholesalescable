@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futureonics | B2B Portal Redesign Preview</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/header_prototype.css">
+    <link rel="stylesheet" href="css/categories_prototype.css">
+    <link rel="stylesheet" href="css/industries_prototype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Spacing layout helpers */
+        .main-content-area {
+            max-width: 1440px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+        .page-back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 40px;
+            height: 40px;
+            background-color: #333333;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 100;
+            transition: background-color 0.2s;
+        }
+        .page-back-to-top:hover {
+            background-color: #0088cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- 1. UNIVERSAL HEADER SECTION               -->
+    <!-- ========================================== -->
+    <div class="header-wrapper">
+        
+        <!-- TOP SECTION: LOGO SIDEBAR + RIGHT GRID -->
+        <div class="header-top-grid">
+            
+            <!-- LEFT COLUMN: SIDEBAR LOGO -->
+            <div class="logo-sidebar">
+                <a href="#">
+                    <h1>FUTURE<span>ONICS</span></h1>
+                </a>
+                <div class="flag-tagline">
+                    <img src="images/us_flag.png" alt="USA Flag" style="width: 20px; height: 11px; display: inline-block; vertical-align: middle; border: 1px solid #ddd; margin-right: 4px;">
+                    <span>Custom Cable in the USA</span>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: ROW 1 (PRIMARY BLUE BAR) + ROW 2 (WHITE MENU BAR) -->
+            <div class="header-right-col">
+                
+                <!-- ROW 1: BLUE TRUST BAR -->
+                <div class="teal-bar">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>ISO 9001:2015 Certified &bull; AS9100 Certified</span>
+                    </div>
+                    
+                    <div class="trust-item center">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span><strong>Free Ground Shipping On Orders Over $250</strong> &bull; Use Code <span class="shipping-code-badge">SHIP4FREE</span> <span class="exclusions-link">Exclusions Apply</span></span>
+                    </div>
+                    
+                    <div class="trust-item">
+                        <i class="fa-solid fa-star" style="color: #00b67a;"></i>
+                        <span>Excellent 1200+ Reviews</span>
+                        <div class="trustpilot-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2: WHITE NAVIGATION MENU -->
+                <div class="white-nav-bar">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="#"><span class="menu-text">Shop By</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">Resources</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">Customer Support</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">About</span> <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="configurator-link"><i class="fa-solid fa-gear"></i> Configurator Tools <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROW 3: DARK SEARCH & UTILITIES BAR (Full Width) -->
+        <div class="dark-search-bar">
+            <div class="container-flex">
+                
+                <!-- Phone Info -->
+                <div class="phone-block">
+                    <div class="phone-icon-box">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phone-text">
+                        <span class="phone-tagline">Fast Lead Times/ Fast Shipping</span>
+                        <a href="tel:+15613200396" class="phone-link">+1-561-320-0396</a>
+                    </div>
+                </div>
+
+                <!-- Main WooCommerce Search Bar -->
+                <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" class="search-input-field" placeholder="Search product codes, categories, keywords...">
+                        <button type="submit" class="search-button-el" aria-label="Submit Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Utilities (Account, Cart, Order Tracker) -->
+                <div class="utility-nav">
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span>Sign In</span>
+                    </a>
+                    
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span>My Cart</span>
+                    </a>
+
+                    <a href="#" class="utility-link">
+                        <div class="utility-circle-icon">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <span>Track Order</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROW 4: SEVEN CATEGORY BLOCKS ROW -->
+        <div class="categories-tabs-row">
+            <div class="categories-tabs-grid">
+                
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-link category-tab-icon"></i>
+                    <div class="category-tab-text">Singlemode 9/125<br>Patch Cables</div>
+                </div>
+                
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-network-wired category-tab-icon"></i>
+                    <div class="category-tab-text">Multimode 50/125<br>Patch Cables</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-server category-tab-icon"></i>
+                    <div class="category-tab-text">MTP / MPO<br>Fiber Assemblies</div>
+                </div>
+
+                <div class="category-tab-item" style="position: relative;">
+                    <i class="fa-solid fa-drum category-tab-icon"></i>
+                    <div class="category-tab-text">Bulk Fiber<br>Optic Cables</div>
+                    <i class="fa-solid fa-chevron-right category-tab-icon" style="margin-left: auto; font-size: 11px;"></i>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-box-archive category-tab-icon"></i>
+                    <div class="category-tab-text">Enclosures<br>&amp; Cassettes</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-shuffle category-tab-icon"></i>
+                    <div class="category-tab-text">Ethernet &amp; Fiber<br>Converters</div>
+                </div>
+
+                <div class="category-tab-item">
+                    <i class="fa-solid fa-screwdriver-wrench category-tab-icon"></i>
+                    <div class="category-tab-text">Tools, Attenuators<br>&amp; Accessories</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. PRODUCT CATEGORIES & BANNER             -->
+    <!-- ========================================== -->
+    <div class="section-wrapper main-content-area">
+        
+        <!-- NETWORK CONFIGURATOR BANNER -->
+        <div class="configurator-banner">
+            <div class="banner-left">
+                <h2>Network Configurator</h2>
+                <p>Use Futureonics' state of the art network designer tool to completely build your network from scratch. Select a product type below to get started immediately.</p>
+            </div>
+            
+            <div class="dropdown-container">
+                <select class="custom-select" id="product-type-select" onchange="handleSelectChange(this)">
+                    <option value="">Select A Product Type</option>
+                    <option value="pre-term">Pre-Terminated Assemblies</option>
+                    <option value="mtp-mpo">MTP/MPO Trunk Cables</option>
+                    <option value="patch-cables">Fiber Patch Cables</option>
+                    <option value="enclosures">Rackmount Enclosures</option>
+                    <option value="bulk-fiber">Bulk Fiber Spools</option>
+                    <option value="ethernet">Ethernet Patch Cables</option>
+                </select>
+                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </div>
+        </div>
+
+        <!-- 18 PRODUCT CATEGORIES GRID (SHARP CARD FRAMES) -->
+        <div class="categories-container">
+            <div class="categories-grid">
+                
+                <!-- Card 1 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/pre_terminated_assembly.png" alt="Pre-Terminated Fiber Optic Assemblies">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Pre-Terminated Fiber<br>Optic Assemblies</span>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_spool.png" alt="MTP/MPO Trunk Cables, Fanouts, & Cassettes">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">MTP/MPO Trunk Cables,<br>Fanouts, &amp; Cassettes</span>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/tactical_reel.png" alt="Harsh Environment Cabling & Equipment">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Harsh Environment<br>Cabling &amp; Equipment</span>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/pre_terminated_assembly.png" alt="Fiber Optic Patch Cables, Enclosures, & Splitters">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Fiber Optic Patch Cables,<br>Enclosures, &amp; Splitters</span>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_enclosure.png" alt="Fiber Enclosures, Adapter Panels, & Splice Trays">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Fiber Enclosures, Adapter<br>Panels, &amp; Splice Trays</span>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_enclosure.png" alt="MTP/MPO Cassettes, Enclosures, & Couplers">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">MTP/MPO Cassettes,<br>Enclosures, &amp; Couplers</span>
+                    </div>
+                </a>
+
+                <!-- Card 7 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_spool.png" alt="Unterminated Fiber Optic Cable">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Unterminated Fiber<br>Optic Cable</span>
+                    </div>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/transceiver.png" alt="Switches, SFPs & Media Converters">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Switches, SFPs &amp;<br>Media Converters</span>
+                    </div>
+                </a>
+
+                <!-- Card 9 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/network_switch.png" alt="Network Switches - Managed, PoE, & Industrial">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Network Switches -<br>Managed, PoE, &amp; Industrial</span>
+                    </div>
+                </a>
+
+                <!-- Card 10 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/crimping_tool.png" alt="Fiber Optic Testing Scopes, VFLs, OPMs, & OTDRs">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Fiber Optic Testing Scopes,<br>VFLs, OPMs, &amp; OTDRs</span>
+                    </div>
+                </a>
+
+                <!-- Card 11 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/transceiver.png" alt="Fiber Optic Cleaning Products">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Fiber Optic Cleaning<br>Products</span>
+                    </div>
+                </a>
+
+                <!-- Card 12 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/pre_terminated_assembly.png" alt="Ethernet Patch Cables">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Ethernet Patch Cables</span>
+                    </div>
+                </a>
+
+                <!-- Card 13 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_spool.png" alt="Bulk Ethernet Cable">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Bulk Ethernet Cable</span>
+                    </div>
+                </a>
+
+                <!-- Card 14 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/transceiver.png" alt="Data & Voice Connectors">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Data &amp; Voice Connectors</span>
+                    </div>
+                </a>
+
+                <!-- Card 15 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/fiber_enclosure.png" alt="Ethernet Patch Panels">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Ethernet Patch Panels</span>
+                    </div>
+                </a>
+
+                <!-- Card 16 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/crimping_tool.png" alt="Datacom Tools and Testers">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Datacom Tools and<br>Testers</span>
+                    </div>
+                </a>
+
+                <!-- Card 17 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/tactical_reel.png" alt="IT Technician Tool Kits and Cases">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">IT Technician Tool<br>Kits and Cases</span>
+                    </div>
+                </a>
+
+                <!-- Card 18 -->
+                <a href="#" class="category-card">
+                    <div class="card-img-box">
+                        <img src="images/network_switch.png" alt="Network Switches, SFPs, Converters, & Racks">
+                    </div>
+                    <div class="card-title-box">
+                        <span class="card-title">Network Switches, SFPs,<br>Converters, &amp; Racks</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 3. TRUSTED BY CLIENTS LOGO ROW             -->
+    <!-- ========================================== -->
+    <section class="trust-logos-section">
+        <div class="section-wrapper">
+            <h3 class="trust-logos-title">Trusted By Premier Clients for Mission-Critical Network Infrastructure.</h3>
+            
+            <div class="logos-row">
+                <!-- Peraton -->
+                <div class="logo-item" title="Peraton">
+                    <span style="font-family: 'Outfit'; font-weight: 800; font-size: 20px; color: #005a9c; letter-spacing: -0.5px;">Peraton</span>
+                </div>
+                <!-- NASA -->
+                <div class="logo-item" title="NASA">
+                    <!-- High-fidelity blue logo simulation -->
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <div style="width: 28px; height: 28px; border-radius: 50%; background-color: #0b3d91; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 8px; border: 1px solid #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">NASA</div>
+                        <span style="font-family: 'Outfit'; font-weight: 800; font-size: 16px; color: #0b3d91; letter-spacing: 0.5px;">NASA</span>
+                    </div>
+                </div>
+                <!-- U.S. Air Force -->
+                <div class="logo-item" title="U.S. Air Force">
+                    <div style="display: flex; align-items: center; gap: 4px;">
+                        <i class="fa-solid fa-jet-fighter-up" style="color: #003087; font-size: 18px;"></i>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 12px; color: #003087; letter-spacing: 1px;">U.S. AIR FORCE</span>
+                    </div>
+                </div>
+                <!-- Northrop Grumman -->
+                <div class="logo-item" title="Northrop Grumman">
+                    <span style="font-family: 'Outfit'; font-weight: 800; font-size: 16px; color: #003366; letter-spacing: -0.5px;">NORTHROP GRUMMAN</span>
+                </div>
+                <!-- Caltech -->
+                <div class="logo-item" title="Caltech">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #ff6600; display: inline-block;"></div>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 18px; color: #333333; letter-spacing: -0.5px;">Caltech</span>
+                    </div>
+                </div>
+                <!-- MLB All-Star Game -->
+                <div class="logo-item" title="MLB All-Star Game">
+                    <div style="display: flex; align-items: center; gap: 4px; font-weight: 800; font-size: 12px; color: #c41e3a;">
+                        <i class="fa-solid fa-star" style="color: #c41e3a;"></i>
+                        <span>ALL-STAR GAME</span>
+                    </div>
+                </div>
+                <!-- DoD -->
+                <div class="logo-item" title="U.S. Department of Defense">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <i class="fa-solid fa-shield-halved" style="color: #1d2d50; font-size: 20px;"></i>
+                        <span style="font-family: 'Outfit'; font-weight: 700; font-size: 11px; color: #1d2d50; letter-spacing: 0.5px; line-height: 1.1; text-align: left;">U.S. DEPT OF<br>DEFENSE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. INDUSTRIES WE SERVE CAROUSEL SECTION    -->
+    <!-- ========================================== -->
+    <section class="industries-section">
+        <div class="section-wrapper" style="position: relative;">
+            
+            <div class="industries-header">
+                <h2 class="industries-title">Shop By Industries We Serve</h2>
+            </div>
+
+            <!-- Slider Track -->
+            <div class="industries-slider-wrapper">
+                <!-- Navigation Arrows (Centered Vertically on Sides of Grid) -->
+                <button class="carousel-nav-btn prev" onclick="slideIndustries('left')" aria-label="Previous Slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav-btn next" onclick="slideIndustries('right')" aria-label="Next Slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="industries-track" id="industries-track">
+                    
+                    <!-- Card 1: Data Centers -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Data Centers</div>
+                    </a>
+
+                    <!-- Card 2: Energy -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Energy</div>
+                    </a>
+
+                    <!-- Card 3: Military -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1508847154043-be12a62861c1?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Military</div>
+                    </a>
+
+                    <!-- Card 4: Labs & Research -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Labs, Research &amp;<br>Sports Technology</div>
+                    </a>
+
+                    <!-- Card 5: Aerospace -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Aerospace</div>
+                    </a>
+
+                    <!-- Card 6: Healthcare -->
+                    <a href="#" class="industry-card">
+                        <div class="industry-card-img" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="industry-card-overlay"></div>
+                        <div class="industry-card-text">Healthcare, Finance<br>&amp; Public Services</div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BACK TO TOP FLOATING BUTTON -->
+    <div class="page-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll To Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript Actions -->
+    <script>
+        // Select Dropdown Actions
+        function handleSelectChange(select) {
+            const val = select.value;
+            if(val) {
+                alert(`Selected Configurator Path: "${val}"\n\n(In production, this routes the user to the specific builder wizard)`);
+            }
+        }
+
+        // Industry Carousel Sliding Action
+        function slideIndustries(direction) {
+            const track = document.getElementById('industries-track');
+            const scrollAmount = 320; // Size of card + gap
+            if (direction === 'left') {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+        
+        // Auto-play option (Optional slider rotation)
+        let autoPlayInterval = setInterval(() => {
+            const track = document.getElementById('industries-track');
+            if (track) {
+                // If scroll reaches end, reset to 0, else scroll by 320px
+                if (track.scrollLeft >= (track.scrollWidth - track.clientWidth - 10)) {
+                    track.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    track.scrollBy({ left: 320, behavior: 'smooth' });
+                }
+            }
+        }, 8000);
+        
+        // Pause auto-play on mouse interactions
+        const trackEl = document.getElementById('industries-track');
+        if (trackEl) {
+            trackEl.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        }
+    </script>
+
+</body>
+</html>
